@@ -36,7 +36,7 @@ $ pip install .
 ## Usage
 
 ```python
-from utilspy_g4 import compare_frames
+from compare_frames_g4 import compare_frames
 
 is_equal = compare_frames('path_to_frame_1.png', 'path_to_frame_2.png')
 ```
@@ -84,7 +84,7 @@ $ pip install .
 ## Использование
 
 ```python
-from utilspy_g4 import compare_frames
+from compare_frames_g4 import compare_frames
 
 is_equal = compare_frames('path_to_frame_1.png', 'path_to_frame_2.png')
 ```

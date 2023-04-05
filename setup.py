@@ -7,7 +7,7 @@ with open(path.join(top_level_directory, 'README.md'), encoding='utf-8') as file
     long_description = file.read()
 
 setup(
-   name='compare_frames',
+   name='compare_frames_g4',
    version='1.0.0',
    description='Small utils for Python',
    long_description=long_description,

@@ -1,7 +1,7 @@
 # compare_frames change log
 
 This document records all notable changes to
-[utilspy](https://github.com/Genzo4/compare_frames).
+[compare_frames](https://github.com/Genzo4/compare_frames).
 
 ## 1.0.0 (2023-04-05)
 
