@@ -9,7 +9,7 @@ with open(path.join(top_level_directory, 'README.md'), encoding='utf-8') as file
 setup(
    name='compare_frames_g4',
    version='1.0.0',
-   description='Small utils for Python',
+   description='Compare 2 frames',
    long_description=long_description,
    long_description_content_type='text/markdown',
    author='Genzo',
