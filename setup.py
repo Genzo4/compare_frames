@@ -8,7 +8,7 @@ with open(path.join(top_level_directory, 'README.md'), encoding='utf-8') as file
 
 setup(
    name='compare_frames_g4',
-   version='1.0.0',
+   version='1.1.0',
    description='Compare 2 frames',
    long_description=long_description,
    long_description_content_type='text/markdown',
@@ -41,6 +41,6 @@ setup(
              ],
    license='MIT',
    packages=['compare_frames_g4'],
-   install_requires=['opencv-contrib-python'],
+   install_requires=['opencv-contrib-python<4.6', 'numpy', 'multipledispatch'],
    python_requires='>=3.6'
 )
