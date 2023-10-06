@@ -35,10 +35,44 @@ $ pip install .
 
 ## Usage
 
+- From files
+
 ```python
 from compare_frames_g4 import compare_frames
 
-is_equal = compare_frames('path_to_frame_1.png', 'path_to_frame_2.png')
+is_equal = compare_frames('path_to_frame_1', 'path_to_frame_2')
+```
+
+- From frames (numpy.ndarray)
+
+```python
+from compare_frames_g4 import compare_frames
+import cv2
+
+frame_1 = cv2.imread('path_to_frame_1')
+frame_2 = cv2.imread('path_to_frame_2')
+
+is_equal = compare_frames(frame_1, frame_2)
+```
+
+- Mix
+
+```python
+from compare_frames_g4 import compare_frames
+import cv2
+
+frame_1 = cv2.imread('path_to_frame_1')
+
+is_equal = compare_frames(frame_1, 'path_to_frame_2')
+```
+
+```python
+from compare_frames_g4 import compare_frames
+import cv2
+
+frame_2 = cv2.imread('path_to_frame_2')
+
+is_equal = compare_frames('path_to_frame_2', frame_2)
 ```
 
 ***
@@ -83,10 +117,44 @@ $ pip install .
 
 ## Использование
 
+- Берём кадры из файлов 
+
 ```python
 from compare_frames_g4 import compare_frames
 
-is_equal = compare_frames('path_to_frame_1.png', 'path_to_frame_2.png')
+is_equal = compare_frames('path_to_frame_1', 'path_to_frame_2')
+```
+
+- Используем "готовые" кадры (numpy.ndarray). Например, из cv2.imread
+
+```python
+from compare_frames_g4 import compare_frames
+import cv2
+
+frame_1 = cv2.imread('path_to_frame_1')
+frame_2 = cv2.imread('path_to_frame_2')
+
+is_equal = compare_frames(frame_1, frame_2)
+```
+
+- Смешанный режим
+
+```python
+from compare_frames_g4 import compare_frames
+import cv2
+
+frame_1 = cv2.imread('path_to_frame_1')
+
+is_equal = compare_frames(frame_1, 'path_to_frame_2')
+```
+
+```python
+from compare_frames_g4 import compare_frames
+import cv2
+
+frame_2 = cv2.imread('path_to_frame_2')
+
+is_equal = compare_frames('path_to_frame_2', frame_2)
 ```
 
 ***
